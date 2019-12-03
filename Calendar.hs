@@ -27,9 +27,9 @@ instance Show Week where
     show Friday = "Fri"
     show Saturday = "Sat"
     show Sunday = "Sun"
-
 instance Show Time where
   show (Time h m s) = show h ++ ":" ++ show m ++ ":" ++ show s
+-- show (Hour 2)
 instance Show Hour where
   show (Hour h) = addZero (show h)
 instance Show Minute where
